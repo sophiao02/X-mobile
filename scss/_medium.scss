@@ -1,0 +1,14 @@
+#headerWrapper {
+  header {padding: 2rem $gutter;}
+  h1 {font-size: 2rem;}
+}/* NAVIGATION STUFF GOES HERE  */
+nav ul {
+  width: 200px;
+}
+
+
+// create the for loop
+@for $i from 1 through 12 {
+  $w: calc($i /12) * 100%;
+  .medium-#{$i} {flex-basis: $w;}
+}

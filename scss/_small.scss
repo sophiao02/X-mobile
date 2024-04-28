@@ -1,0 +1,162 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* BODY  */
+body {
+	font-family: $defaultFont;
+	font-size: 16px;
+    background-image:url(../images/background.jpg);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: $secondaryColor;
+    margin: 0;
+    padding: 0;
+	font-weight: $lightWeight;
+    min-width: 320px;
+}
+
+
+/* HEADER  */
+header {
+    display: grid;
+    grid-template-columns: 51px auto;
+    align-items: center;
+	padding: .5rem 2vw;
+	h1 {
+        font-size: 2rem;
+        padding-left: .5rem;
+        color: $primaryColor;
+        font-family: $logoFont;
+        font-weight: 100;
+    }
+} // end header
+
+/* NAVIGATION STUFF GOES HERE  */
+nav {
+    button {
+        position: absolute;
+        top: 0;
+        right:0;
+        background: transparent;
+        border: none;
+        font-size: 1.5rem;
+        color: $secondaryColor;
+        padding: .5rem 2vw .5rem 1rem;
+        cursor: pointer;
+        transition: background-color .3s ease;
+        &:hover {
+            color: $primaryColor;
+        }
+    } // end button
+
+    ul {
+        background-color: $menuColor;
+        position: absolute;
+        right: 0;
+        width: 100%;
+        display: none;
+    } // end ul
+
+    ul.open {display: block;}
+
+    ul li {border-bottom: 1px solid rgba(0,0,0,0.1);}
+
+    ul li a {
+        display: block;
+        padding: .9rem 2vw;
+        font-weight: $lightWeight;
+        color: rgba(255,255,255,0.9);
+        text-decoration: none;
+        text-align: right;
+    } // end anchors
+
+    ul li.active a {background-color: lighten($menuColor, 8%);}
+    ul li a:hover {background-color: lighten($menuColor, 4%);}
+
+}// end nav
+
+// main
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+
+
+img {
+    width: 400;
+    height: 225;
+  }
+  
+  // styling the rows
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1rem 0;
+    padding: 0 8px;
+    //border: greenyellow solid 1px;
+  }
+  
+  // styling the columns
+  .column {
+    padding: 15px;
+    margin: 8px 0;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #a7a7a7;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .column:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.45);
+  }
+  h2, p {
+    margin: 0 0 10px 0;
+  }
+  h2 {
+    color: $primaryColor;
+    font-family: $logoFont;
+    font-weight: 100;
+  }
+  h1 {color: $accentColor; font-family: $headerFont; font-size: 1.5rem;}
+  p {
+    color: $secondaryColor;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  // create the for loop
+  @for $i from 1 through 12 {
+    $w: calc($i /12) * 100%;
+    .small-#{$i} {flex-basis: $w;}
+  }
+  
+  .line, .round, .fill, .shadow {padding: 8px 8px;}
+  
+  .line {border: 1px $secondaryColor solid}
+  .round {border-radius: 9px;}
+  .fill {background-color: darken($menuColor, 3%);}
+  .shadow {box-shadow: 0 0 10px $secondaryColor;}
+
+
+} //end main
+
+
+/* FOOTER  */
+#footerWrapper {background-color: #1b1b1b; }
+footer {
+    font-size: .85rem;
+	padding: 1rem 0;
+	color: #bbb;
+	text-align: center;
+    font-family: $headerFont;
+	a{color: #eee;}
+}
