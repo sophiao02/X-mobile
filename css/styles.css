@@ -116,6 +116,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   background-image: url(../images/background.jpg);
+  background-color: black;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -274,7 +275,7 @@ main .line, main .round, main .fill, main .shadow {
   padding: 8px 8px;
 }
 main .line {
-  border: 1px #c7d2fe solid;
+  border: 1px #69afa0 solid;
 }
 main .round {
   border-radius: 9px;

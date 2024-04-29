@@ -9,6 +9,7 @@ body {
 	font-family: $defaultFont;
 	font-size: 16px;
     background-image:url(../images/background.jpg);
+    background-color: black;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -144,7 +145,7 @@ img {
   
   .line, .round, .fill, .shadow {padding: 8px 8px;}
   
-  .line {border: 1px $secondaryColor solid}
+  .line {border: 1px $accentColor solid}
   .round {border-radius: 9px;}
   .fill {background-color: darken($menuColor, 3%);}
   .shadow {box-shadow: 0 0 10px $secondaryColor;}
