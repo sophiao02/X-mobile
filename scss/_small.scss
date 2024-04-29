@@ -15,7 +15,7 @@ body {
     color: $secondaryColor;
     margin: 0;
     padding: 0;
-	font-weight: $lightWeight;
+	  font-weight: $lightWeight;
     min-width: 320px;
 }
 
@@ -37,6 +37,7 @@ header {
 
 /* NAVIGATION STUFF GOES HERE  */
 nav {
+  
     button {
         position: absolute;
         top: 0;
@@ -44,7 +45,7 @@ nav {
         background: transparent;
         border: none;
         font-size: 1.5rem;
-        color: $secondaryColor;
+        color: $navColor;
         padding: .5rem 2vw .5rem 1rem;
         cursor: pointer;
         transition: background-color .3s ease;
@@ -59,11 +60,13 @@ nav {
         right: 0;
         width: 100%;
         display: none;
+        
+        
     } // end ul
 
-    ul.open {display: block;}
+    ul.open {display: block; }
 
-    ul li {border-bottom: 1px solid rgba(0,0,0,0.1);}
+    ul li {border-bottom: 1px solid rgba(0,0,0,0.1); }
 
     ul li a {
         display: block;
