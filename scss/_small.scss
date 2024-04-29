@@ -26,7 +26,7 @@ header {
     display: grid;
     grid-template-columns: 51px auto;
     align-items: center;
-	padding: .5rem 2vw;
+	  padding: .5rem 2vw;
 	h1 {
         font-size: 2rem;
         padding-left: .5rem;
@@ -94,8 +94,8 @@ main {
 
 
 img {
-    width: 400px;
-    height: 225px;
+    width: 100%;
+    height: auto;
   }
 }
   // styling the rows
@@ -105,11 +105,15 @@ img {
     justify-content: center;
     margin: 1rem 0;
     padding: 0 8px;
+    width: 100%;
+    height: auto;
     //border: greenyellow solid 1px;
   }
   
   // styling the columns
   .column {
+    width: 100%;
+    height: auto;
     padding: 15px;
     margin: 8px 4px;
     background: rgba(255, 255, 255, 0.1);

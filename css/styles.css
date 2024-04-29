@@ -194,8 +194,8 @@ main {
   gap: 20px;
 }
 main img {
-  width: 400px;
-  height: 225px;
+  width: 100%;
+  height: auto;
 }
 
 .row {
@@ -204,9 +204,13 @@ main img {
   justify-content: center;
   margin: 1rem 0;
   padding: 0 8px;
+  width: 100%;
+  height: auto;
 }
 
 .column {
+  width: 100%;
+  height: auto;
   padding: 15px;
   margin: 8px 4px;
   background: rgba(255, 255, 255, 0.1);
