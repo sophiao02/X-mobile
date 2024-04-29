@@ -337,9 +337,6 @@ footer a {
   nav ul {
     width: 200px;
   }
-  main {
-    border: 1px solid pink;
-  }
   .medium-1 {
     flex-basis: 8.3333333333%;
   }
@@ -415,9 +412,6 @@ footer a {
   }
   nav ul li.active a {
     color: white;
-  }
-  main {
-    border: 1px solid green;
   }
   .large-1 {
     flex-basis: 8.3333333333%;
