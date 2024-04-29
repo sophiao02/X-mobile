@@ -197,93 +197,116 @@ main img {
   width: 400px;
   height: 225px;
 }
-main .row {
+
+.row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin: 1rem 0;
   padding: 0 8px;
 }
-main .column {
+
+.column {
   padding: 15px;
-  margin: 8px 0;
+  margin: 8px 4px;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid #a7a7a7;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-main .column:hover {
+.column:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.45);
 }
-main h2, main p {
+
+h2, p {
   margin: 0 0 10px 0;
 }
-main h2 {
+
+h2 {
   color: #B61AFF;
   font-family: "Russo One";
   font-weight: 100;
 }
-main h1 {
+
+h1 {
   color: #69afa0;
   font-family: "Jersey";
   font-size: 1.5rem;
 }
-main p {
+
+p {
   color: #c7d2fe;
   font-size: 1rem;
   line-height: 1.6;
 }
-main .small-1 {
+
+.small-1 {
   flex-basis: 8.3333333333%;
 }
-main .small-2 {
+
+.small-2 {
   flex-basis: 16.6666666667%;
 }
-main .small-3 {
+
+.small-3 {
   flex-basis: 25%;
 }
-main .small-4 {
+
+.small-4 {
   flex-basis: 33.3333333333%;
 }
-main .small-5 {
+
+.small-5 {
   flex-basis: 41.6666666667%;
 }
-main .small-6 {
+
+.small-6 {
   flex-basis: 50%;
 }
-main .small-7 {
+
+.small-7 {
   flex-basis: 58.3333333333%;
 }
-main .small-8 {
+
+.small-8 {
   flex-basis: 66.6666666667%;
 }
-main .small-9 {
+
+.small-9 {
   flex-basis: 75%;
 }
-main .small-10 {
+
+.small-10 {
   flex-basis: 83.3333333333%;
 }
-main .small-11 {
+
+.small-11 {
   flex-basis: 91.6666666667%;
 }
-main .small-12 {
+
+.small-12 {
   flex-basis: 100%;
 }
-main .line, main .round, main .fill, main .shadow {
+
+.line, .round, .fill, .shadow {
   padding: 8px 8px;
 }
-main .line {
+
+.line {
   border: 1px #69afa0 solid;
 }
-main .round {
+
+.round {
   border-radius: 9px;
 }
-main .fill {
+
+.fill {
   background-color: #2c0132;
 }
-main .shadow {
+
+.shadow {
   box-shadow: 0 0 10px #c7d2fe;
 }
 
@@ -313,6 +336,9 @@ footer a {
   /* NAVIGATION STUFF GOES HERE  */
   nav ul {
     width: 200px;
+  }
+  main {
+    border: 1px solid pink;
   }
   .medium-1 {
     flex-basis: 8.3333333333%;
@@ -389,6 +415,9 @@ footer a {
   }
   nav ul li.active a {
     color: white;
+  }
+  main {
+    border: 1px solid green;
   }
   .large-1 {
     flex-basis: 8.3333333333%;
